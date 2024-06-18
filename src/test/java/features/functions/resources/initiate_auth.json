@@ -1,0 +1,12 @@
+{
+  "AuthFlow": "USER_SRP_AUTH",
+  "AuthParameters": {
+    "USERNAME": "#(uuid)",
+    "SRP_A": "#(srpA)"
+  },
+  "ClientMetadata": {
+    "session": "#(sessionToken)",
+    "device": "eyJwbGF0Zm9ybSI6eyJzbyI6ImlPUyIsInZlcnNpb24iOiIxNy40LjEifSwiZGV2aWNlIjp7Im1vZGVsIjoiaVBob25lIiwiYnJhbmQiOiJBcHBsZSJ9LCJhcHBWZXJzaW9uIjoiMS4wLjAifQ=="
+  },
+  "ClientId": "3ubgt6n7n7j1cj8eu1imv3t318"
+}

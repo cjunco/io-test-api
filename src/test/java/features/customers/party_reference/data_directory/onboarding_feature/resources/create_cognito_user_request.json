@@ -1,0 +1,27 @@
+{
+  "ClientId":"#(clientId)",
+  "Username":"#(uuid)",
+  "Password":"#(password)",
+  "ClientMetadata":
+  {
+    "device": "eyJwbGF0Zm9ybSI6eyJzbyI6ImlPUyIsInZlcnNpb24iOiIxNS4wIn0sImRldmljZSI6eyJtb2RlbCI6ImlQaG9uZSAxMiBtaW5pIiwiYnJhbmQiOiJBcHBsZSJ9LCJhcHBWZXJzaW9uIjoiMC4xLjAifQ=="
+  },
+  "UserAttributes":[
+    {
+      "Name":"email",
+      "Value":"#(email)"
+    },
+    {
+      "Name":"phone_number",
+      "Value":"#(phoneCognito)"
+    },
+    {
+      "Name": "custom:referralCode",
+      "Value": ""
+    },
+    {
+      "Name":"custom:document_number",
+      "Value":"#(docNumber)"
+    }
+  ]
+}

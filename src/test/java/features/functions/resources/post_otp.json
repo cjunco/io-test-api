@@ -1,0 +1,5 @@
+{
+  "Username":"#(uuid)",
+  "ConfirmationCode":"#(otpCode)",
+  "ClientId":"#(clientId)"
+}

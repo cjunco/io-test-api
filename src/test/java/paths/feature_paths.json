@@ -1,0 +1,13 @@
+{
+  "create_cognito_user" : "classpath:features/customers/party_reference/data_directory/onboarding_feature/create_cognito_user.feature@happy_path_create_user",
+  "create" : "classpath:features/customers/party_reference/data_directory/onboarding_feature/create.feature@happy_path_create_user",
+  "create_offer": "classpath:features/functions/create_offer.feature@create_offer_complete",
+  "get_otp" : "classpath:features/functions/get_otp.feature@get_otp",
+  "initiate_auth" : "classpath:features/functions/initiate_auth.feature",
+  "login" : "classpath:features/customers/party_reference/location_data_management/login_feature/login.feature@happy_path_login",
+  "onboarding" : "classpath:features/customers/party_reference/data_directory/onboarding_feature/onboarding.feature",
+  "post_otp" : "classpath:features/functions/post_otp.feature",
+  "respond_auth_challenge" : "classpath:features/functions/respond_auth_challenge.feature",
+  "session_token" : "classpath:features/functions/session_token.feature",
+  "validation_user" : "classpath:features/functions/validation_user.feature"
+}

@@ -1,0 +1,6 @@
+{
+  "logGroupName":"#(logGroupName)",
+  "logStreamName":"#(otplogStreams)",
+  "startFromHead":true,
+  "limit": 100
+}

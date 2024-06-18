@@ -1,0 +1,6 @@
+{
+  "logGroupName":"#(logGroupName)",
+  "orderBy":"LastEventTime",
+  "descending":true,
+  "limit":3
+}

@@ -1,0 +1,27 @@
+{
+  "Username": "#(uuid)",
+  "Password": "#(password)",
+  "UserAttributes": [
+    {
+      "Name": "email",
+      "Value": "#(email)"
+    },
+    {
+      "Name": "phone_number",
+      "Value": "#(phoneCognito)"
+    },
+    {
+      "Name": "custom:document_number",
+      "Value": "#(docNumber)"
+    },
+    {
+      "Name": "custom:referralCode",
+      "Value": ""
+    }
+  ],
+  "ClientMetadata": {
+    "device": "#(device)",
+    "session": "#(sessionToken)"
+  },
+  "ClientId": "#(clientId)"
+}

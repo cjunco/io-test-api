@@ -1,0 +1,14 @@
+{
+  "ChallengeName": "PASSWORD_VERIFIER",
+  "ChallengeResponses": {
+    "USERNAME": "#(uuid)",
+    "PASSWORD_CLAIM_SECRET_BLOCK": "#(secretBlock)",
+    "TIMESTAMP": "#(timestamp)",
+    "PASSWORD_CLAIM_SIGNATURE": "#(signature)"
+  },
+  "ClientMetadata": {
+    "session": "#(sessionToken)",
+    "device": "#(device)"
+  },
+  "ClientId": "#(clientId)"
+}

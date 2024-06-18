@@ -1,0 +1,10 @@
+{
+  "CodeDeliveryDetails":
+  {
+    "AttributeName":"phone_number",
+    "DeliveryMedium":"SMS",
+    "Destination":"#ignore"
+  },
+  "UserConfirmed":false,
+  "UserSub":"#ignore"
+}

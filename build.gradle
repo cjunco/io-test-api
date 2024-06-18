@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.io'
+version = '1.0-SNAPSHOT'
+
+dependencies {
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.1'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'io.cucumber:cucumber-java:7.18.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.18.0'
+    testImplementation 'io.cucumber:cucumber-jvm-deps:1.0.6'
+    testImplementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    implementation group: 'net.masterthought', name: 'cucumber-reporting', version: '5.8.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.17.1'
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.70'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-cognitoidp', version: '1.12.730'
+    implementation group: 'software.amazon.awssdk', name: 'cognitoidentityprovider', version: '2.25.60'
+
+
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'karate.options', System.properties.getProperty('karate.options')
+    systemProperty 'karate.env', System.properties.getProperty('karate.env')
+    systemProperty 'karate.tag', System.properties.getProperty('karate.tag')
+    outputs.upToDateWhen { false }
+}
+
+repositories {
+    mavenCentral()
+}
+
+task karateDebug(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.intuit.karate.cli.Main'
+}
